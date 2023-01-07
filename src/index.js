@@ -12,6 +12,9 @@ import ListQuote from './components/ListQuote';
 import CreatePersonForm from './components/CreatePersonForm';
 import LoadProfileFromData from './components/LoadActivityAPI';
 import TensieMain from './components/TensieMain';
+import UseOfReducerHook from './components/UseOfReducerHook';
+import UseOfRefHook from './components/UseOfRefHook';
+import UseOfContextHook from './components/UseOfContextHook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,6 +29,9 @@ root.render(
       <CreatePersonForm />
       <LoadProfileFromData/>
       <TensieMain />
+      <UseOfReducerHook />
+      <UseOfRefHook />
+      <UseOfContextHook />
     </div>
   </React.StrictMode>
 );
