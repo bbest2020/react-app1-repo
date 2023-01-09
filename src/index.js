@@ -16,23 +16,39 @@ import UseOfReducerHook from './components/UseOfReducerHook';
 import UseOfRefHook from './components/UseOfRefHook';
 import UseOfContextHook from './components/UseOfContextHook';
 
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import ContactPage from './pages/ContactPage';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ErrorPage from './pages/ErrorPage';
+import AdminPage from './pages/AdminPage';
+import App from './App';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//use of react components
+// root.render(
+//   <React.StrictMode>
+//     <div className='container'>
+//       <HeaderPage />
+//       <MainPage />
+//       <FooterPage />
+//       <DisplayName />
+//       <AddItem />
+//       <ListQuote />
+//       <CreatePersonForm />
+//       <LoadProfileFromData/>
+//       <TensieMain />
+//       <UseOfReducerHook />
+//       <UseOfRefHook />
+//       <UseOfContextHook />
+//     </div>
+//   </React.StrictMode>
+// );
+
+
 root.render(
   <React.StrictMode>
-    <div className='container'>
-      <HeaderPage />
-      <MainPage />
-      <FooterPage />
-      <DisplayName />
-      <AddItem />
-      <ListQuote />
-      <CreatePersonForm />
-      <LoadProfileFromData/>
-      <TensieMain />
-      <UseOfReducerHook />
-      <UseOfRefHook />
-      <UseOfContextHook />
-    </div>
+    <App />
   </React.StrictMode>
 );
 
